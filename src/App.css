@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+.center {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+    position: relative;
+    display: block;
+    top: 20px;
+    left: 670px;
+    background-color: white;
+    box-shadow: 1px 1px 10px #e3dedd;
+    border: 0px ridge #e3dedd;
+    border-radius: 25px;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+    transition: 0.1s;
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input:hover {
+    background-color: #f8f8f8;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input[type="text"] {
+    width: 500px;
+    padding: 10px 40px 10px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    outline: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#icon {
+    display: block;
+    background-image: url(/images/magnifying-glass-logo.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
 }
